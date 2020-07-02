@@ -1,0 +1,62 @@
+.section-hero {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient($bg-line-gradient, $bg-line-gradient),
+		url(../image/Header_after.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: $footer-fon-color;
+}
+
+.hero {
+	border-bottom: 1px solid $line-color;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 200px;
+	padding-top: 200px;
+
+	width: 1200px;
+	outline: 2px solid tomato;
+	text-align: center;
+
+	&__title {
+		width: 696px;
+		height: 120px;
+		margin-left: 270px;
+		margin-right: 270px;
+		margin-top: 0;
+		margin-bottom: 30px;
+
+		text-align: center;
+		color: $primary-white-color;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.4;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		display: inline-block;
+		border-width: 0;
+		padding: 10px 32px;
+		min-width: 200px;
+		height: 50px;
+		border-radius: 4px;
+		color: $primary-white-color;
+		background-color: $accent-color;
+		box-shadow: 0px 4px 4px $border-color-shadow;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.87;
+		letter-spacing: 0.06em;
+		align-items: center;
+		text-align: center;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,85 @@
+.characteristics {
+	border-bottom: 1px solid $line-color;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	padding-top: 94px;
+	padding-bottom: 94px;
+	border-bottom: 1px solid $line-color;
+
+	width: 1200px;
+	outline: 2px solid tomato;
+}
+
+.characteristics__title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+	margin-bottom: 50px;
+	color: $primary-text-color;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.characteristics-descr {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.characteristics-descr__item {
+	display: block;
+	width: calc((100% - 90px) / 4);
+	height: 251px;
+
+	align-items: center;
+	justify-content: center;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.characterictics-descr__icon {
+	width: 270px;
+	height: 120px;
+	margin: auto;
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background-color: $second-fon-color;
+}
+
+.characteristics-descr__name {
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.characteristics-descr__text {
+	margin: 0;
+	padding: 0;
+	color: $title-text-color;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+}

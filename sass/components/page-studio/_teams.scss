@@ -1,0 +1,120 @@
+.section-team {
+	background-color: $second-fon-color;
+}
+
+.team {
+	border-bottom: 1px solid $line-color;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	border-bottom: 1px solid $line-color;
+	width: 1200px;
+	outline: 2px solid tomato;
+}
+
+.team__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.team-list {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__photo {
+		margin-bottom: 30px;
+	}
+}
+
+.team-list__item {
+	background-color: $primary-white-color;
+	width: calc((100% - 90px) / 4);
+	text-align: center;
+	padding-bottom: 24px;
+	box-shadow: 0px 2px 1px $team-box-shadow-1, 0px 1px 1px $team-box-shadow-2,
+		0px 1px 3px $team-box-shadow-3;
+	border-radius: 4px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.team-list__name {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+
+.team-list__job {
+	margin: 0;
+	margin-bottom: 16px;
+	padding: 0;
+	color: $title-text-color;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+
+.team-socials {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.team-socials__list {
+	content: "";
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color $transitions;
+
+	&:not(:last-child) {
+		margin-right: 6px;
+	}
+
+	&:hover {
+		background-color: $accent-color;
+	}
+}
+
+.team-socials__page {
+	padding: 10px;
+	color: #afb1b8;
+	transition: color 250ms $transitions;
+
+	&:hover {
+		color: $primary-white-color;
+	}
+
+	&--link {
+		width: 20px;
+		height: 20px;
+		fill: currentColor;
+	}
+}

@@ -1,0 +1,28 @@
+// Палитра цветов макета и наборы шрифтов вынесены в переменные в файле variables.scss
+// Color
+$primary-text-color: #212121;
+$title-text-color: #757575;
+$accent-color: #2196f3;
+$logo-color: #000000;
+$primary-white-color: #ffffff;
+$footer-fon-color: #2f303a;
+$line-color: #ececec;
+$second-fon-color: #f5f4fa;
+$second-text-color: rgba(255, 255, 255, 0.6);
+$background-color: rgba(255, 255, 255, 0.1);
+$border-color: rgba(255, 255, 255, 0.3);
+$border-color-shadow: rgba(0, 0, 0, 0.15);
+$copyright-color: rgba(255, 255, 255, 0.4);
+$bg-line-gradient: rgba(47, 48, 58, 0.8);
+$border-bm-color: rgba(23, 25, 46, 0.8);
+$team-box-shadow-1: rgba(0, 0, 0, 0.2);
+$team-box-shadow-2: rgba(0, 0, 0, 0.14);
+$team-box-shadow-3: rgba(0, 0, 0, 0.12);
+$modal-name-border: rgba(33, 33, 33, 0.2);
+
+// Font
+$main-font: Roboto, sans-serif;
+$logo-font: Raleway, sans-serif;
+
+// transitions
+$transitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
