@@ -1,33 +1,105 @@
+// .clients {
+// 	border-bottom: 1px solid $line-color;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	padding-top: 94px;
+// 	padding-bottom: 94px;
+// 	border-bottom: 1px solid $line-color;
+// 	width: 1200px;
+// 	outline: 2px solid tomato;
+// }
+
+// .clients__title {
+// 	margin-top: 0;
+// 	margin-bottom: 50px;
+// 	color: $primary-text-color;
+// 	font-weight: 700;
+// 	font-size: 36px;
+// 	line-height: 1.2;
+// 	text-align: center;
+// 	letter-spacing: 0.03em;
+// }
+
+// .regular-clients {
+// 	display: flex;
+// 	justify-content: center;
+// 	list-style: none;
+// 	padding: 0;
+// 	margin: 0;
+
+// 	&__icon--client {
+// 		fill: currentColor;
+// 	}
+
+// 	&__icon--client6 {
+// 		fill: currentColor;
+// 		width: 88.48px;
+// 	}
+// }
+
+// .regular-clients__item {
+// 	display: flex;
+// 	justify-content: center;
+// 	width: calc((100% - 150px) / 6);
+// 	height: 90px;
+// 	align-items: center;
+// 	border: 1px solid $title-text-color;
+// 	border-radius: 4px;
+// 	transition: border-color 250ms $transitions;
+
+// 	&:not(:last-child) {
+// 		margin-right: 30px;
+// 	}
+
+// 	&:hover,
+// 	&:focus {
+// 		border-color: $accent-color;
+// 	}
+// }
+
+// .regular-clients__link {
+// 	color: #afb1b8;
+// 	padding: 30px;
+// 	transition: color 250ms $transitions;
+
+// 	&:hover {
+// 		color: $accent-color;
+// 	}
+// }
+
 .clients {
-	border-bottom: 1px solid $line-color;
+	display: block;
+
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 94px;
-	padding-bottom: 94px;
-	border-bottom: 1px solid $line-color;
-	width: 1200px;
-	outline: 2px solid tomato;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .clients__title {
 	margin-top: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	color: $primary-text-color;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.2;
+	font-size: 28px;
+	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
 
 .regular-clients {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-left: -15px;
+	margin-right: -15px;
 
 	&__icon--client {
 		fill: currentColor;
@@ -41,16 +113,22 @@
 
 .regular-clients__item {
 	display: flex;
+	width: calc((100% - 60px) / 2);
 	justify-content: center;
-	width: calc((100% - 150px) / 6);
 	height: 90px;
 	align-items: center;
-	border: 1px solid $title-text-color;
+	border: 1px solid $border-clients;
 	border-radius: 4px;
-	transition: border-color 250ms $transitions;
+	transition: border-color $transitions;
+	margin-bottom: 30px;
 
-	&:not(:last-child) {
+	&:nth-child(2n + 1) {
 		margin-right: 30px;
+	}
+
+	&:nth-child(5),
+	:nth-child(6) {
+		margin-bottom: 0;
 	}
 
 	&:hover,
@@ -61,8 +139,8 @@
 
 .regular-clients__link {
 	color: #afb1b8;
-	padding: 30px;
-	transition: color 250ms $transitions;
+	// padding: 20px;
+	transition: color $transitions;
 
 	&:hover {
 		color: $accent-color;

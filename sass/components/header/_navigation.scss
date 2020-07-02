@@ -1,68 +1,67 @@
-.container-header {
-	display: flex;
+// .container-header {
+// 	display: flex;
 
-	align-items: center;
-	border-bottom: 1px solid $line-color;
+// 	align-items: center;
+// 	border-bottom: 1px solid $line-color;
 
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 1200px;
-	outline: 2px solid tomato;
-}
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	width: 1200px;
+// 	outline: 2px solid tomato;
+// }
 
-.site-nav {
-	display: flex;
-	align-items: center;
-}
+// .site-nav {
+// 	display: flex;
+// 	align-items: center;
+// }
 
-.site-nav-pagination {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+// .site-nav-pagination {
+// 	display: flex;
+// 	list-style: none;
+// 	margin: 0;
+// 	padding: 0;
 
-	&__item:not(:last-child) {
-		margin-right: 50px;
-	}
-}
+// 	&__item:not(:last-child) {
+// 		margin-right: 50px;
+// 	}
+// }
 
-.site-nav-pagination__link {
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	text-decoration: none;
-	color: $primary-text-color;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.12;
-	letter-spacing: 0.02em;
-	transition: color $transitions;
+// .site-nav-pagination__link {
+// 	display: block;
+// 	padding-top: 32px;
+// 	padding-bottom: 32px;
+// 	text-decoration: none;
+// 	color: $primary-text-color;
+// 	font-weight: 500;
+// 	font-size: 14px;
+// 	line-height: 1.12;
+// 	letter-spacing: 0.02em;
+// 	transition: color $transitions;
 
-	&:hover,
-	&:focus {
-		color: $accent-color;
-	}
-}
+// 	&:hover,
+// 	&:focus {
+// 		color: $accent-color;
+// 	}
+// }
 
-.site-nav-pagination__item {
-	position: relative;
-}
+// .site-nav-pagination__item {
+// 	position: relative;
+// }
 
-.site-nav-pagination__link--active {
-	color: $accent-color;
-	&::after {
-		position: absolute;
-		content: "";
-		bottom: 0;
-		left: 0;
-		width: 100%;
+// .site-nav-pagination__link--active {
+// 	color: $accent-color;
+// 	&::after {
+// 		position: absolute;
+// 		content: "";
+// 		bottom: 0;
+// 		left: 0;
+// 		width: 100%;
 
-		background-color: $accent-color;
+// 		background-color: $accent-color;
 
-		height: 4px;
-		border-radius: 2px;
-	}
-}
-
+// 		height: 4px;
+// 		border-radius: 2px;
+// 	}
+// }
