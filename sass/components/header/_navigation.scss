@@ -65,3 +65,156 @@
 // 		border-radius: 2px;
 // 	}
 // }
+
+.container-header {
+	position: relative;
+	height: 60px;
+	display: flex;
+
+	align-items: center;
+	border-bottom: 1px solid $line-color;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+		position: static;
+		height: 80px;
+		justify-content: flex-start;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+}
+
+.container-header__menu .is-open {
+	display: inline-block;
+	text-align: center;
+	z-index: 3;
+}
+
+.button__menu {
+	display: inline-flex;
+	justify-self: flex-end;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.button__menu--icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	fill: currentColor;
+}
+
+.button__menu--icon-close {
+	display: none;
+}
+
+.container-header__menu {
+	background-color: $primary-white-color;
+	border-top: 1px solid $line-color;
+	padding: 60px 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 768px) {
+		border: none;
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+		width: 768px;
+		height: 80px;
+		padding: 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+
+.site-nav {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02;
+	color: $primary-text-color;
+
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.site-nav-pagination {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@media sceen and (min-width: 768px) {
+		display: flex;
+	}
+}
+
+.site-nav-pagination__item {
+	display: list-item;
+
+	@media screen and (max-width: 768px) {
+		:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+}
+
+.site-nav-pagination__link {
+	color: $primary-text-color;
+	text-decoration: none;
+	display: inline-block;
+	transition: 250ms $transitions;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+
+	@media screen and (min-width: 768px) {
+		text-align: center;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+
+.site-nav-pagination__link--active {
+	position: relative;
+	color: $accent-color;
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: $accent-color;
+		height: 4px;
+		border-radius: 2px;
+	}
+}
